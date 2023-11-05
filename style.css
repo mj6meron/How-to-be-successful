@@ -1,0 +1,41 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: rgb(201, 201, 201);
+    
+}
+
+p{
+    color: rgba(55, 63, 0, 0.4);
+}
+
+.title {
+    color: rgba(95, 120, 97, 0.6);
+}
+
+.idea {
+    margin-bottom: 20px;
+}
+
+.header {
+    font-size: 1.5em;
+    color: #666;
+    
+}
+footer{
+    margin: 10px;
+    color: green;
+}
+
+.idea{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.content {
+    color: #666;
+    line-height: 1.6;
+}
