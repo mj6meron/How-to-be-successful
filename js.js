@@ -2,7 +2,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     fetch('data.json')
         .then(response => response.json())
-        .then(data => populateData(data.list));
+        .then(data => {
+            populateData(data.list);
+            addIntroduction(data.introduction.text);
+        });
 });
 
 function populateData(points) {
@@ -34,3 +37,14 @@ function populateData(points) {
     });
 }
 
+function addIntroduction(introText) {
+    const header = document.querySelector('header');
+    // Create the paragraph for the introduction
+    const introParagraph = document.createElement('p');
+    introParagraph.className = 'content';
+    // Replace newlines with line breaks in content
+    introParagraph.innerHTML = introText.replace(/\n/g, '<br>');
+
+    // Insert the introduction paragraph after the title
+    header.insertAdjacentElement('beforeend', introParagraph);
+}

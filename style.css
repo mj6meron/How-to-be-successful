@@ -2,16 +2,12 @@
 body {
     font-family: 'Arial', sans-serif;
     padding: 20px;
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(31, 49, 0)
     
 }
 
-p{
-    color: rgba(55, 63, 0, 0.4);
-}
-
 .title {
-    color: rgba(95, 120, 97, 0.6);
+    color: rgba(127, 255, 138, 0.6);
 }
 
 .idea {
@@ -20,22 +16,23 @@ p{
 
 .header {
     font-size: 1.5em;
-    color: #666;
+    color: rgba(252, 255, 203, 0.5);
     
 }
-footer{
+small{
     margin: 10px;
     color: green;
 }
 
 .idea{
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.02);
     border-radius: 12px;
     padding: 1%;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.03);
 }
 
 .content {
-    color: #666;
+    color: rgba(255, 255, 255, 0.6);
     line-height: 1.6;
 }
